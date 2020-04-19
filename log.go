@@ -1,4 +1,4 @@
-package magogo
+package log
 
 import (
 	"context"
