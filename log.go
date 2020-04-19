@@ -1,4 +1,4 @@
-package metali
+package log
 
 import (
 	"context"
@@ -15,7 +15,7 @@ const (
 	loggerKey contextKey = iota
 )
 
-// Logger the Metali logger
+// Logger the logiNG logger
 type Logger interface {
 	logrus.FieldLogger
 	WriterLevel(logrus.Level) *io.PipeWriter
@@ -127,7 +127,7 @@ func RotateFile() error {
 	logger := FromContext(context.Background())
 
 	if logFile == nil && logFilePath == "" {
-		logger.Debug("Metali log is not writing to a file, ignoring rotate request")
+		logger.Debug("logiNG log is not writing to a file, ignoring rotate request")
 		return nil
 	}
 

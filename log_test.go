@@ -1,11 +1,12 @@
-package metali
+package log
 
 import (
 	"bytes"
 	"context"
-	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLog(t *testing.T) {
